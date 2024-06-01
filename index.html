@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operaciones básicas</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      let a, b, op;
+      a = 12;
+      b = 6;
+      function suma() {
+        document.getElementById("aS").innerHTML = a;
+        document.getElementById("bS").innerHTML = b;
+        document.getElementById("totalS").innerHTML = a + b;
+        document.getElementById("operadorS").innerHTML = "+";
+        document.getElementById("igualS").innerHTML = "=";
+      }
+      function resta() {
+        document.getElementById("aR").innerHTML = a;
+        document.getElementById("bR").innerHTML = b;
+        document.getElementById("totalR").innerHTML = a - b;
+        document.getElementById("operadorR").innerHTML = "-";
+        document.getElementById("igualR").innerHTML = "=";
+      }
+      function multiplicacion() {
+        document.getElementById("aM").innerHTML = a;
+        document.getElementById("bM").innerHTML = b;
+        document.getElementById("totalM").innerHTML = a * b;
+        document.getElementById("operadorM").innerHTML = "*";
+        document.getElementById("igualM").innerHTML = "=";
+      }
+      function division() {
+        document.getElementById("aD").innerHTML = a;
+        document.getElementById("bD").innerHTML = b;
+        document.getElementById("totalD").innerHTML = a / b;
+        document.getElementById("operadorD").innerHTML = "÷";
+        document.getElementById("igualD").innerHTML = "=";
+      }
+    </script>
+  </head>
+  <body>
+    <!--Alexis Yazir Hernandez Hipolito 3 D-->
+    <header><h1>Operaciones básicas con funciones</h1></header>
+    <div class="container">
+      <div class="suma">
+      <h3>Suma</h3><br>
+      <p>
+        <strong id="aS"></strong> <strong id="operadorS"></strong>
+        <strong id="bS"></strong> <strong id="igualS"></strong>
+        <strong id="totalS"></strong>
+      </p><br>
+      <button type="button" onclick="suma()">Sumar</button>
+    </div>
+
+    <div class="resta">
+        <h3>Resta</h3><br>
+      <p>
+        <strong id="aR"></strong> <strong id="operadorR"></strong>
+        <strong id="bR"></strong> <strong id="igualR"></strong>
+        <strong id="totalR"></strong>
+      </p><br>
+      <button type="button" onclick="resta()">Restar</button>
+    </div>
+
+    <div class="multiplicacion">
+        <h3>Multiplicación</h3><br>
+      <p>
+        <strong id="aM"></strong> <strong id="operadorM"></strong>
+        <strong id="bM"></strong> <strong id="igualM"></strong>
+        <strong id="totalM"></strong>
+      </p><br>
+      <button type="button" onclick="multiplicacion()">Multiplicar</button>
+    </div>
+
+    <div class="division">
+        <h3>División</h3><br>
+      <p>
+        <strong id="aD"></strong> <strong id="operadorD"></strong>
+        <strong id="bD"></strong> <strong id="igualD"></strong>
+        <strong id="totalD"></strong>
+      </p><br>
+      <button type="button" onclick="division()">Dividir</button>
+    </div>
+    </div>
+    
+  </body>
+</html>
